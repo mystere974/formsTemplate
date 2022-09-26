@@ -26,7 +26,8 @@
         <input type="text" id="email" name="email" [(ngModel)]="model.email" #email="ngModel" email required>
     </fieldset>
     <div *ngIf="form.submitted && email.errors">
-        <span *ngIf="email.errors?.['required']">L'email est invalide</span>
+        <span *ngIf="email.errors?.['required']">L'email est obligatoire</span>
+        <span *ngIf="email.errors?.['email']">L'email est invalide</span>
     </div>
 
     <fieldset>
