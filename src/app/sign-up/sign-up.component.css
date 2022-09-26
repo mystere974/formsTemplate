@@ -1,0 +1,11 @@
+.formTitle{
+    display: flex;
+    justify-content: center;
+}
+
+.formContent {
+    width: 80%;
+    height: 80vh;
+    background-color: var(--blue-2);
+    border-radius: 20px;
+}
